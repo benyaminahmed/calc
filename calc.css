@@ -1,0 +1,31 @@
+body {
+    background-color: lightgreen;
+}
+
+.container {
+    background-color: darkgreen;
+    padding: 5px;
+    width: 220px;
+}
+
+.ba-btn-calc {
+    background-color: darkgreen;
+    border: 0px darkgreen solid;
+    text-align: center;
+}
+
+.ba-calc-output {
+    width: 210px;
+    height: 27px;
+    font-size: 30px;
+}
+
+.long {
+    width: 100px;
+}
+
+.wrap {
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}

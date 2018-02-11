@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+    <script src="calc.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <input id="calcInput1" type="text" class="ba-calc-output" placeholder="0">
+            <input id="calcOperator" type="text" class="ba-calc-output">
+            <input id="calcInput2" type="text" class="ba-calc-output" placeholder="0">
+            <input id="calcOutput" type="text" class="ba-calc-output" placeholder="0">
+        </div>
+        <div class="container">
+            <button onclick="onInputEntered('1')" class="btn btn-success ba-btn-calc">1</button>
+            <button onclick="onInputEntered('2')" class="btn btn-success ba-btn-calc">2</button>
+            <button onclick="onInputEntered('3')" class="btn btn-success ba-btn-calc">3</button>
+            <button onclick="onInputEntered('0')" class="btn btn-success ba-btn-calc">0</button>
+        </div>
+        <div class="container">
+            <button onclick="onInputEntered('4')" class="btn btn-success ba-btn-calc">4</button>
+            <button onclick="onInputEntered('5')" class="btn btn-success ba-btn-calc">5</button>
+            <button onclick="onInputEntered('6')" class="btn btn-success ba-btn-calc">6</button>
+            <button onclick="onOperatorEntered('+')" class="btn btn-success ba-btn-calc">+</button>
+        </div>
+        <div class="container">
+            <button onclick="onInputEntered('7')" class="btn btn-success ba-btn-calc">7</button>
+            <button onclick="onInputEntered('8')" class="btn btn-success ba-btn-calc">8</button>
+            <button onclick="onInputEntered('9')" class="btn btn-success ba-btn-calc">9</button>
+            <button onclick="onOperatorEntered('-')" class="btn btn-success ba-btn-calc">-</button>
+        </div>
+        <div class="container">
+            <button onclick="onOperatorEntered('÷')" class="btn btn-success ba-btn-calc">÷</button>
+            <button onclick="onOperatorEntered('×')" class="btn btn-success ba-btn-calc">×</button>
+            <button onclick="onCalculate()" class="btn btn-success ba-btn-calc">=</button>
+            <button onclick="onInputEntered('.')" class="btn btn-success ba-btn-calc">.</button>
+        </div>
+    </div>
+    <div class="container">
+        <button onclick="onDelete()" class="btn btn-success ba-btn-calc long">Del</button>
+        <button onclick="onClear()" class="btn btn-success ba-btn-calc long">Clear</button>
+    </div>
+</body>
+
+</html>
