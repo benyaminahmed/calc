@@ -18,8 +18,8 @@ function onCalculate() {
     var input2 = document.getElementById('calcInput2').value;
     var operator = document.getElementById('calcOperator').value;
     var result = '';
-    var number1 = parseInt(input1);
-    var number2 = parseInt(input2);
+    var number1 = parseFloat(input1);
+    var number2 = parseFloat(input2);
 
     if (operator === '+') {
         result = number1 + number2;
